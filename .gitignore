@@ -1,7 +1,11 @@
+webpack/server_alt.js
+
+# Created by https://www.gitignore.io
+
+### Node ###
 # Logs
 logs
 *.log
-npm-debug.log*
 
 # Runtime data
 pids
@@ -14,24 +18,83 @@ lib-cov
 # Coverage directory used by tools like istanbul
 coverage
 
-# nyc test coverage
-.nyc_output
-
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
-
-# node-waf configuration
-.lock-wscript
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 
-# Dependency directories
+# Dependency directory
+# Commenting this out is preferred by some people, see
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
 node_modules
-jspm_packages
 
-# Optional npm cache directory
-.npm
+# Users Environment Variables
+.lock-wscript
 
-# Optional REPL history
-.node_repl_history
+
+### Bower ###
+bower_components
+
+
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+# Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+
+### SublimeText ###
+# cache files for sublime text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# workspace files are user-specific
+*.sublime-workspace
+
+# project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using SublimeText
+# *.sublime-project
+
+# sftp configuration file
+sftp-config.json
+
+
+### vim ###
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+### Jekyll ###
+_site/
+.sass-cache/
+.jekyll-metadata
+
+
+.vagrant
+dist
+_tmp
+app/build/**
+.sass-cache
+build/**
