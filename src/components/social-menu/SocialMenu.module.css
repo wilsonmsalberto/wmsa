@@ -1,0 +1,11 @@
+.SocialMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.SocialMenuItem {
+  color: #dc1718;
+  text-decoration: none;
+  font-weight: 300;
+}

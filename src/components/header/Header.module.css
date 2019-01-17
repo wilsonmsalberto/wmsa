@@ -1,0 +1,9 @@
+.Wrapper {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .Wrapper {
+    display: block;
+  }
+}
