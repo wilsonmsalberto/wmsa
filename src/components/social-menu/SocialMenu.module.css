@@ -5,7 +5,14 @@
 }
 
 .SocialMenuItem {
+  display: flex;
+  align-items: center;
+  padding: .5rem 0;
   color: #dc1718;
   text-decoration: none;
   font-weight: 300;
+}
+
+.SocialMenuItem svg{
+  margin-right: 1rem;
 }

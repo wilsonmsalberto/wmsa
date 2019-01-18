@@ -2,6 +2,7 @@ import React from 'react'
 
 // Components
 import { SocialMenu, SocialMenuItem } from '../../components/social-menu/SocialMenu';
+import { GithubIcon, CodepenIcon, LinkedinIcon } from '../../components/svg/Svg';
 
 // Styles
 import styles from './Home.module.css';
@@ -17,12 +18,18 @@ const Home = () => (
 
       <SocialMenu className={styles.SocialMenu}>
         <SocialMenuItem
+          svg={ <LinkedinIcon /> }
+          linkText="Linked In - wilsonmsalberto"
           url="https://www.linkedin.com/in/wilsonmsalberto"
         />
         <SocialMenuItem
+          svg={ <GithubIcon /> }
+          linkText="Github - wilsonmsalberto"
           url="https://github.com/wilsonmsalberto"
         />
         <SocialMenuItem
+          svg={ <CodepenIcon /> }
+          linkText="Codepen - walberto"
           url="https://codepen.io/walberto"
         />
       </SocialMenu>
