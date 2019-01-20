@@ -22,8 +22,8 @@ module.exports = {
         name: `wilson-alberto-website`,
         short_name: `wmsa`,
         start_url: `/`,
-        background_color: `#dc1718`,
-        theme_color: `#dc1718`,
+        background_color: `#336e7b`,
+        theme_color: `#336e7b`,
         display: `minimal-ui`,
         icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },

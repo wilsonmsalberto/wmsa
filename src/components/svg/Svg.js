@@ -8,7 +8,7 @@ import styles from './Svg.module.css';
 
 const SvgIcon = ({ xlinkHref }) => (
   <svg className={styles.SocialIcons}>
-    <use fill="#dc1718" xlinkHref={xlinkHref} />
+    <use fill="#336e7b" xlinkHref={xlinkHref} />
   </svg>
 );
 

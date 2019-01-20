@@ -22,7 +22,7 @@
   margin: 0;
   padding-right: 2rem;
   font-size: 1.5rem;
-  color: #dc1718;
+  color: #336e7b;
 }
 
 .Menu > li:last-child {
@@ -33,5 +33,5 @@
   padding: 1.5rem 0;
   text-decoration: none;
   text-transform: uppercase;
-  color: #dc1718;
+  color: #336e7b;
 }
