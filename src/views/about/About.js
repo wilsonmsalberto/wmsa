@@ -1,11 +1,14 @@
 import React from 'react';
 
+// Components
+import Title from '../../components/title/Title';
+
 // Styles
 import styles from './About.module.css';
 
 const About = () => (
   <div className={styles.Content}>
-    <h2 className={styles.Title}>About</h2>
+    <Title>About</Title>
     <p>
       I've been a Front End developer for about 7 years and it's been a blast.
     </p>

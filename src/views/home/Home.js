@@ -1,6 +1,7 @@
 import React from 'react'
 
 // Components
+import Title from '../../components/title/Title';
 import { SocialMenu, SocialMenuItem } from '../../components/social-menu/SocialMenu';
 import { GithubIcon, CodepenIcon, LinkedinIcon } from '../../components/svg/Svg';
 
@@ -9,7 +10,7 @@ import styles from './Home.module.css';
 
 const Home = () => (
   <div className={styles.Content}>
-    <p>Hello!</p>
+    <Title>Hello!</Title>
     <p>I'm Wilson, a Front End developer based in Porto, Portugal.</p>
     <p>To learn a bit more about me, feel free to browse around.</p>
     <div className={styles.SocialNetworks}>

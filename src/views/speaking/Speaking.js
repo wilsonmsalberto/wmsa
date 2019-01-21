@@ -1,6 +1,7 @@
 import React from 'react'
 
 // Components
+import Title from '../../components/title/Title';
 import Video from '../../components/video/Video';
 
 // Styles
@@ -8,7 +9,7 @@ import styles from './Speaking.module.css';
 
 const Speaking = () => (
   <section className={styles.Content}>
-    <h2 className={styles.Title}>Speaking</h2>
+    <Title>Speaking</Title>
     <p>On occasion, I'll look for opportunities to share knowledge with others.</p>
     <p>I'd love for you to check them out and tell me what you thought!</p>
     <div className={styles.Videos}>
