@@ -1,0 +1,27 @@
+{
+  "extends": ["airbnb", "plugin:react/recommended", "prettier", "prettier/babel", "prettier/react"],
+  "plugins": ["babel", "prettier", "react"],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "rules": {
+    "global-require": "off",
+    "import/no-extraneous-dependencies": "off",
+    "no-param-reassign": ["error", { "props": false }],
+    "react/no-unescaped-entities": "off",
+    "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx"] }],
+    "prettier/prettier": "error"
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
+  }
+}

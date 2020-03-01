@@ -11,31 +11,57 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "eslint:fix": "npm run lint:eslint -- --fix",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "lint": "npm run lint:prettier && npm run lint:eslint",
+    "lint:eslint": "eslint \"src/**/*.{js,jsx}\"",
+    "lint:fix": "npm run prettier:fix && npm run eslint:fix",
+    "lint:prettier": "prettier --check \"./src/**/*.{js,jsx,ts,css,html}\"",
+    "prettier:fix": "prettier --write \"./src/**/*.{js,jsx,ts,css,html}\"",
     "start": "npm run develop",
-    "format": "prettier --write \"src/**/*.js\"",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
-  },
-  "devDependencies": {
-    "prettier": "^1.15.2"
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "eslint-check": "eslint --print-config path/to/main.js | eslint-config-prettier-check"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/wilsonmsalberto/wmsa"
   },
   "dependencies": {
-    "classnames": "^2.2.6",
-    "gatsby": "^2.13.3",
-    "gatsby-image": "^2.2.4",
-    "gatsby-plugin-manifest": "^2.2.1",
-    "gatsby-plugin-offline": "^3.0.16",
-    "gatsby-plugin-react-helmet": "^3.1.0",
-    "gatsby-plugin-sharp": "^2.2.2",
-    "gatsby-plugin-svg-sprite": "^2.0.1",
-    "gatsby-source-filesystem": "^2.1.2",
-    "gatsby-transformer-sharp": "^2.2.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1"
+    "@emotion/core": "10.0.28",
+    "@emotion/styled": "10.0.27",
+    "classnames": "2.2.6",
+    "gatsby": "2.19.23",
+    "gatsby-image": "2.2.41",
+    "gatsby-plugin-manifest": "2.2.42",
+    "gatsby-plugin-offline": "3.0.35",
+    "gatsby-plugin-react-helmet": "3.1.22",
+    "gatsby-plugin-sharp": "2.4.5",
+    "gatsby-plugin-svg-sprite": "2.0.1",
+    "gatsby-source-filesystem": "2.1.48",
+    "gatsby-transformer-sharp": "2.3.16",
+    "prop-types": "15.7.2",
+    "react": "16.13.0",
+    "react-dom": "16.13.0",
+    "react-helmet": "5.2.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "7.8.3",
+    "@emotion/babel-preset-css-prop": "10.0.27",
+    "babel-eslint": "10.1.0",
+    "babel-plugin-emotion": "10.0.28",
+    "babel-plugin-module-resolver": "4.0.0",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-config-prettier": "6.10.0",
+    "eslint-import-resolver-babel-module": "5.1.2",
+    "eslint-import-resolver-webpack": "0.12.1",
+    "eslint-plugin-babel": "5.3.0",
+    "eslint-plugin-import": "2.20.1",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-prettier": "3.1.2",
+    "eslint-plugin-react": "7.18.3",
+    "gatsby-plugin-emotion": "4.1.22",
+    "prettier": "1.19.1"
   }
 }
