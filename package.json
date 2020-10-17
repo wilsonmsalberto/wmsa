@@ -37,7 +37,7 @@
     "gatsby-plugin-sharp": "2.6.42",
     "gatsby-plugin-svg-sprite": "2.0.1",
     "gatsby-source-filesystem": "2.3.34",
-    "gatsby-transformer-sharp": "2.5.17",
+    "gatsby-transformer-sharp": "2.5.18",
     "prop-types": "15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
