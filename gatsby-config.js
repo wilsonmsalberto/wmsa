@@ -1,36 +1,38 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`
+    title: 'Wilson Alberto - Frontend Developer - Personal Website',
+    description: 'The personal website of Wilson Alberto, a Frontend Developer based in Portugal',
+    author: '@wilsonmsalberto',
+    siteUrl: 'https://www.wilsonalberto.com',
   },
   plugins: [
-    `gatsby-plugin-emotion`,
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-robots-txt',
+    'gatsby-plugin-emotion',
+    'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`
-      }
+        name: 'images',
+        path: `${__dirname}/src/images`,
+      },
     },
-    `gatsby-transformer-sharp`,
+    'gatsby-transformer-sharp',
     'gatsby-plugin-svg-sprite',
-    `gatsby-plugin-sharp`,
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: `wilson-alberto-website`,
-        short_name: `wmsa`,
-        start_url: `/`,
-        background_color: `#272727`,
-        theme_color: `#272727`,
-        display: `minimal-ui`,
-        icon: `src/images/logo.png` // This path is relative to the root of the site.
-      }
-    }
+        name: 'wilson-alberto-website',
+        short_name: 'wmsa',
+        start_url: '/',
+        background_color: '#272727',
+        theme_color: '#272727',
+        display: 'minimal-ui',
+        icon: 'src/images/logo.png', // This path is relative to the root of the site.
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
-  ]
+  ],
 };

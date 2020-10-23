@@ -25,12 +25,12 @@ export const Menu = styled.ul`
 
   && > li:last-child {
     padding-right: 0;
-    color: #dc133d;
+    color: #ffe200;
   }
 
   && > li > a {
     padding: 1.5rem 0;
     text-transform: uppercase;
-    color: #dc133d;
+    color: #ffe200;
   }
 `;

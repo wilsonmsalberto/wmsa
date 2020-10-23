@@ -10,7 +10,7 @@ import { SocialIcons } from './styles';
 
 const SvgIcon = ({ xlinkHref }) => (
   <SocialIcons>
-    <use fill="#dc133d" xlinkHref={xlinkHref} />
+    <use fill="#ffe200" xlinkHref={xlinkHref} />
   </SocialIcons>
 );
 
