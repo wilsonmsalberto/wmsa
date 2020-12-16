@@ -37,7 +37,7 @@
     "gatsby-plugin-robots-txt": "^1.5.3",
     "gatsby-plugin-sharp": "2.6.43",
     "gatsby-plugin-svg-sprite": "2.0.1",
-    "gatsby-source-filesystem": "2.3.35",
+    "gatsby-source-filesystem": "2.8.0",
     "gatsby-transformer-sharp": "2.5.19",
     "prop-types": "15.7.2",
     "react": "17.0.1",
