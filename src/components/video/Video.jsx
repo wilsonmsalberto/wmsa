@@ -20,7 +20,7 @@ const Video = ({ title, location, videoId }) => (
 Video.propTypes = {
   title: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
-  videoId: PropTypes.string.isRequired
+  videoId: PropTypes.string.isRequired,
 };
 
 export default Video;

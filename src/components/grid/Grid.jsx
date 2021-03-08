@@ -18,20 +18,20 @@ const Column = ({ children, className }) => (
 
 Row.propTypes = {
   children: PropTypes.oneOfType([PropTypes.element, PropTypes.string]).isRequired,
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 Row.defaultProps = {
-  className: undefined
+  className: undefined,
 };
 
 Column.propTypes = {
   children: PropTypes.oneOfType([PropTypes.element, PropTypes.string]).isRequired,
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 Column.defaultProps = {
-  className: undefined
+  className: undefined,
 };
 
 export { Row, Column };

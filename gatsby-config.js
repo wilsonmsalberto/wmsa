@@ -17,7 +17,6 @@ module.exports = {
       },
     },
     'gatsby-transformer-sharp',
-    'gatsby-plugin-svg-sprite',
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-manifest',

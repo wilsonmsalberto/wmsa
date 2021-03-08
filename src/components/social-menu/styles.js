@@ -20,7 +20,8 @@ export const SocialMenuItem = styled.li`
     font-size: 2rem;
   }
 
-  svg {
+  span {
+    display: inline-flex;
     margin-right: 1rem;
   }
 `;

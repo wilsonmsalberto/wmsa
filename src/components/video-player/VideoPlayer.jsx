@@ -18,7 +18,7 @@ const VideoPlayer = ({ videoId, title }) => (
 
 VideoPlayer.propTypes = {
   title: PropTypes.string.isRequired,
-  videoId: PropTypes.string.isRequired
+  videoId: PropTypes.string.isRequired,
 };
 
 export default VideoPlayer;

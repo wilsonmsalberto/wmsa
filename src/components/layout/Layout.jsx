@@ -1,7 +1,6 @@
-/** @jsx jsx */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { css, Global, jsx } from '@emotion/core';
+import { css, Global } from '@emotion/react';
 import { Helmet } from 'react-helmet';
 
 // Components

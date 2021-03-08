@@ -10,11 +10,11 @@ const SocialMenu = ({ children, className }) => <StyledSocialMenu className={cla
 
 SocialMenu.propTypes = {
   children: PropTypes.oneOfType([PropTypes.element, PropTypes.string]).isRequired,
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 SocialMenu.defaultProps = {
-  className: undefined
+  className: undefined,
 };
 
 const SocialMenuItem = ({ className, linkText, url, svg }) => (
@@ -30,11 +30,11 @@ SocialMenuItem.propTypes = {
   svg: PropTypes.oneOfType([PropTypes.element, PropTypes.string]).isRequired,
   className: PropTypes.string,
   linkText: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired
+  url: PropTypes.string.isRequired,
 };
 
 SocialMenuItem.defaultProps = {
-  className: undefined
+  className: undefined,
 };
 
 const FullSocialMenu = () => (

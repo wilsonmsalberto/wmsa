@@ -1,25 +1,33 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 
-import codepenIcon from '../../images/svg/codepen.svg';
-import githubIcon from '../../images/svg/github.svg';
-import linkedinIcon from '../../images/svg/linkedin.svg';
+import Codepen from './icons/CodepenIcon';
+import Github from './icons/GithubIcon';
+import Linkedin from './icons/LinkedinIcon';
 
 // Styles
 import { SocialIcons } from './styles';
 
-const SvgIcon = ({ xlinkHref }) => (
-  <SocialIcons>
-    <use fill="#ffe200" xlinkHref={xlinkHref} />
-  </SocialIcons>
-);
+const SvgIcon = ({ children }) => <SocialIcons>{children}</SocialIcons>;
 
 SvgIcon.propTypes = {
-  xlinkHref: PropTypes.string.isRequired
+  children: PropTypes.node.isRequired,
 };
 
-export const CodepenIcon = () => <SvgIcon xlinkHref={`#${codepenIcon.id}`} />;
+export const CodepenIcon = () => (
+  <SvgIcon>
+    <Codepen />
+  </SvgIcon>
+);
 
-export const GithubIcon = () => <SvgIcon xlinkHref={`#${githubIcon.id}`} />;
+export const GithubIcon = () => (
+  <SvgIcon>
+    <Github />
+  </SvgIcon>
+);
 
-export const LinkedinIcon = () => <SvgIcon xlinkHref={`#${linkedinIcon.id}`} />;
+export const LinkedinIcon = () => (
+  <SvgIcon>
+    <Linkedin />
+  </SvgIcon>
+);
