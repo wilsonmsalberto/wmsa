@@ -1084,10 +1084,10 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.3.4", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
-  version "7.13.9"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.13.9.tgz#97dbe2116e2630c489f22e0656decd60aaa1fcee"
-  integrity sha512-aY2kU+xgJ3dJ1eU6FMB9EH8dIe8dmusF1xEku52joLvw6eAFN0AI+WxCLDnpev2LEejWBAy2sBvBOBAjI3zmvA==
+"@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.14.0", "@babel/runtime@^7.3.4", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
+  version "7.14.5"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.14.5.tgz#665450911c6031af38f81db530f387ec04cd9a98"
+  integrity sha512-121rumjddw9c3NCQ55KGkyE1h/nzWhU/owjhw0l4mQrkzz4x9SGS1X8gFLraHwX7td3Yo4QTL+qj0NcIzN87BA==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -1163,7 +1163,7 @@
     source-map "^0.5.7"
     stylis "^4.0.3"
 
-"@emotion/babel-preset-css-prop@^11.0.0":
+"@emotion/babel-preset-css-prop@^11.2.0":
   version "11.2.0"
   resolved "https://registry.yarnpkg.com/@emotion/babel-preset-css-prop/-/babel-preset-css-prop-11.2.0.tgz#c7e945f56b2610b438f0dc8ae5253fc55488de0e"
   integrity sha512-9XLQm2eLPYTho+Cx1LQTDA1rATjoAaB4O+ds55XDvoAa+Z16Hhg8y5Vihj3C8E6+ilDM8SV5A9Z6z+yj0YIRBg==
@@ -6062,13 +6062,13 @@ gatsby-page-utils@^1.0.0:
     lodash "^4.17.20"
     micromatch "^4.0.2"
 
-gatsby-plugin-emotion@6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-emotion/-/gatsby-plugin-emotion-6.0.0.tgz#4072e92221f62fbff43d6257531c5cc4c78c5e11"
-  integrity sha512-l0X2JNIbBa6irytCr6XcQIS1fGmpQHfvTqug2cP5ZQsB0UNK71gUSOAvWKUCJgnF5GkDl50hocqz+LymdR1ZOA==
+gatsby-plugin-emotion@6.7.1:
+  version "6.7.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-emotion/-/gatsby-plugin-emotion-6.7.1.tgz#f25156e7fbf8e7f6f9dd42fcd2708cb50742e18e"
+  integrity sha512-tbgehb9VexyAvxyOIsrg9KUHrvYi3f8tmpGaKg3qb5GWsH0tssGiHlBDl6+84Bo6nJO14jSoIxwerUS0AzSVAw==
   dependencies:
-    "@babel/runtime" "^7.11.2"
-    "@emotion/babel-preset-css-prop" "^11.0.0"
+    "@babel/runtime" "^7.14.0"
+    "@emotion/babel-preset-css-prop" "^11.2.0"
 
 gatsby-plugin-image@1.0.0:
   version "1.0.0"
