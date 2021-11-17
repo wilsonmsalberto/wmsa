@@ -1,9 +1,7 @@
 {
-  "printWidth": 120,
-  "tabWidth": 2,
+  "trailingComma": "all",
   "singleQuote": true,
-  "bracketSpacing": true,
-  "arrowParens": "always",
-  "proseWrap": "always",
-  "jsxBracketSameLine": true
+  "printWidth": 80,
+  "tabWidth": 2,
+  "endOfLine": "auto"
 }

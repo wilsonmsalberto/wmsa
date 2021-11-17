@@ -1,14 +1,23 @@
 module.exports = {
   siteMetadata: {
     title: 'Wilson Alberto - Frontend Developer - Personal Website',
-    description: 'The personal website of Wilson Alberto, a Frontend Developer based in Portugal',
+    description:
+      'The personal website of Wilson Alberto, a Frontend Developer based in Portugal',
     author: '@wilsonmsalberto',
     siteUrl: 'https://www.wilsonalberto.com',
   },
   plugins: [
     'gatsby-plugin-robots-txt',
-    'gatsby-plugin-emotion',
-    'gatsby-plugin-react-helmet',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-styled-components',
+    {
+      resolve: `gatsby-plugin-typescript`,
+      options: {
+        isTSX: true, // defaults to false
+        jsxPragma: `jsx`, // defaults to "React"
+        allExtensions: true, // defaults to false
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -16,8 +25,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -30,8 +37,5 @@ module.exports = {
         icon: 'src/images/logo.png', // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
   ],
 };
