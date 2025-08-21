@@ -5,6 +5,9 @@
   "private": true,
   "author": "Wilson Alberto (https://wilsonalberto.com)",
   "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "keywords": [
     "gatsby",
     "starter",
