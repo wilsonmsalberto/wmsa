@@ -1,4 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { FC, type ReactNode } from 'react';
 
 import { SocialMenu } from '@/components/SocialMenu';
