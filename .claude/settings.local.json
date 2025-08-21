@@ -9,7 +9,13 @@
       "Bash(yarn clean)",
       "Bash(rm:*)",
       "Bash(yarn start)",
-      "Bash(timeout 15 yarn start)"
+      "Bash(timeout 15 yarn start)",
+      "Bash(yarn outdated)",
+      "Bash(npx depcheck:*)",
+      "Bash(yarn why:*)",
+      "Bash(yarn remove:*)",
+      "Bash(yarn add:*)",
+      "Bash(yarn upgrade:*)"
     ],
     "deny": []
   }
