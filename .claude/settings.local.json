@@ -15,7 +15,9 @@
       "Bash(yarn why:*)",
       "Bash(yarn remove:*)",
       "Bash(yarn add:*)",
-      "Bash(yarn upgrade:*)"
+      "Bash(yarn upgrade:*)",
+      "Bash(yarn info:*)",
+      "WebFetch(domain:www.npmjs.com)"
     ],
     "deny": []
   }
