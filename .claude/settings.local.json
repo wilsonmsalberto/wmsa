@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(yarn install)",
+      "Bash(yarn build)",
+      "Bash(yarn test:types)",
+      "Bash(yarn lint)",
+      "Bash(yarn lint:*)",
+      "Bash(yarn clean)",
+      "Bash(rm:*)",
+      "Bash(yarn start)",
+      "Bash(timeout 15 yarn start)"
+    ],
+    "deny": []
+  }
+}

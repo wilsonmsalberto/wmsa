@@ -1,26 +1,16 @@
-import { FC } from 'react';
-import { Helmet } from 'react-helmet';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { FC, type ReactNode } from 'react';
 
 import { SocialMenu } from '@/components/SocialMenu';
 import { Header } from '@/components/Header';
 
 import { GlobalStyles, Main, Title } from './Global.styles';
 
-type LayoutProps = {
+export const Layout: FC<{
   title: string;
-};
-
-export const Layout: FC<LayoutProps> = ({ title, children }) => (
+  children?: ReactNode;
+}> = ({ title, children }) => (
   <>
-    <Helmet>
-      <html lang="en" />
-      <title>Wilson Alberto - Frontend Developer - Personal Website</title>
-      <meta
-        name="description"
-        content="The personal website of Wilson Alberto, a Frontend Developer based in Portugal"
-      />
-    </Helmet>
-
     <Header />
 
     <Main>

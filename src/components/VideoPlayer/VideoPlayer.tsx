@@ -6,20 +6,22 @@ type VideoPlayerProps = {
   location: string;
 };
 
-export const VideoPlayer = ({ videoId, title, location }: VideoPlayerProps) => (
-  <VideoWrapper>
-    <Title>{title}</Title>
+export function VideoPlayer({ videoId, title, location }: VideoPlayerProps) {
+  return (
+    <VideoWrapper>
+      <Title>{title}</Title>
 
-    <p>{`@${location}`}</p>
+      <p>{`@${location}`}</p>
 
-    <Player
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-      frameBorder="0"
-      height="315"
-      src={`https://www.youtube.com/embed/${videoId}`}
-      title={title}
-      width="560"
-    />
-  </VideoWrapper>
-);
+      <Player
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        frameBorder="0"
+        height="315"
+        src={`https://www.youtube.com/embed/${videoId}`}
+        title={title}
+        width="560"
+      />
+    </VideoWrapper>
+  );
+}
