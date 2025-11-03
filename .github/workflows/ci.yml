@@ -31,4 +31,6 @@ jobs:
         run: yarn lint
 
       - name: Check commits messages
-        uses: wagoid/commitlint-github-action@v4
+        uses: wagoid/commitlint-github-action@v6
+        with:
+          configFile: .commitlintrc.json
