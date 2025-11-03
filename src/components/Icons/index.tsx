@@ -1,13 +1,8 @@
-import { FC, type ReactNode } from 'react';
 import { Codepen } from './svg/Codepen';
 import { Github } from './svg/Github';
 import { LinkedIn } from './svg/LinkedIn';
 
 import { SocialIcons } from './Icons.styles';
-
-const SvgIcon: FC<{ children: ReactNode }> = ({ children }) => (
-  <SocialIcons>{children}</SocialIcons>
-);
 
 type IconProps = {
   title: string;
@@ -16,24 +11,24 @@ type IconProps = {
 
 export function CodepenIcon(props: IconProps) {
   return (
-    <SvgIcon>
+    <SocialIcons>
       <Codepen {...props} />
-    </SvgIcon>
+    </SocialIcons>
   );
 }
 
 export function GithubIcon(props: IconProps) {
   return (
-    <SvgIcon>
+    <SocialIcons>
       <Github {...props} />
-    </SvgIcon>
+    </SocialIcons>
   );
 }
 
 export function LinkedInIcon(props: IconProps) {
   return (
-    <SvgIcon>
+    <SocialIcons>
       <LinkedIn {...props} />
-    </SvgIcon>
+    </SocialIcons>
   );
 }
