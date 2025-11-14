@@ -50,7 +50,7 @@ export function CV() {
         title="CV Preview"
       />
 
-      <LastUpdated>Last updated: January 2025</LastUpdated>
+      <LastUpdated>Last updated: November 2025</LastUpdated>
     </Layout>
   );
 }
