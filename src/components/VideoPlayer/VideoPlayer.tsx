@@ -1,4 +1,6 @@
-import { Player, VideoWrapper, Title } from './VideoPlayer.styles';
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
+import { VideoWrapper, Title, FallbackLink } from './VideoPlayer.styles';
 
 type VideoPlayerProps = {
   videoId: string;
@@ -13,15 +15,15 @@ export function VideoPlayer({ videoId, title, location }: VideoPlayerProps) {
 
       <p>{`@${location}`}</p>
 
-      <Player
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-        frameBorder="0"
-        height="315"
-        src={`https://www.youtube.com/embed/${videoId}`}
-        title={title}
-        width="560"
-      />
+      <LiteYouTubeEmbed id={videoId} title={title} />
+
+      <FallbackLink
+        href={`https://www.youtube.com/watch?v=${videoId}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Watch on YouTube →
+      </FallbackLink>
     </VideoWrapper>
   );
 }

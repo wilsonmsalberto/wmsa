@@ -2,6 +2,7 @@ import { FC, type ReactNode } from 'react';
 
 import { SocialMenu } from '@/components/SocialMenu';
 import { Header } from '@/components/Header';
+import { CVDownload } from '@/components/CVDownload';
 
 import { GlobalStyles, Main, Title } from './Global.styles';
 
@@ -16,6 +17,8 @@ export const Layout: FC<{
       <Title>{title}</Title>
 
       {children}
+
+      <CVDownload />
     </Main>
 
     <SocialMenu />

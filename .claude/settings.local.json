@@ -7,7 +7,6 @@
       "Bash(yarn lint)",
       "Bash(yarn lint:*)",
       "Bash(yarn clean)",
-      "Bash(rm:*)",
       "Bash(yarn start)",
       "Bash(timeout 15 yarn start)",
       "Bash(yarn outdated)",
@@ -17,7 +16,9 @@
       "Bash(yarn add:*)",
       "Bash(yarn upgrade:*)",
       "Bash(yarn info:*)",
-      "WebFetch(domain:www.npmjs.com)"
+      "WebFetch(domain:www.npmjs.com)",
+      "Bash(yarn --version)",
+      "Bash(mkdir:*)"
     ],
     "deny": []
   }

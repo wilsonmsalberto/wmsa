@@ -21,6 +21,9 @@ export function Navigation() {
         <li>
           <Link to="/speaking">Speaking</Link>
         </li>
+        <li>
+          <Link to="/cv">CV</Link>
+        </li>
       </Menu>
     </Nav>
   );
