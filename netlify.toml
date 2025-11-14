@@ -4,3 +4,9 @@
 
 [build.environment]
   NODE_VERSION = "22"
+
+[[headers]]
+  for = "/*.pdf"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    Content-Type = "application/pdf"
